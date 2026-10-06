@@ -1,0 +1,5 @@
+window.addEventListener('touchmove', (e) => {
+  const touch = e.touches[0];
+  targetX = (touch.clientX / innerWidth - 0.5) * 2;
+  targetY = (touch.clientY / innerHeight - 0.5) * 2;
+}, { passive: true });
